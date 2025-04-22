@@ -1,0 +1,193 @@
+/* Contact Page Styles */
+
+/* Section Styling */
+.contact-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.section-title i {
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
+  font-size: 1.4em;
+}
+
+/* Card Grid Layout */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.contact-cards-grid.two-columns {
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Card Styling */
+.contact-card {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border-top: 4px solid var(--primary-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card.wide-card {
+  grid-column: span 2;
+}
+
+.contact-card.blue-highlight {
+  border-top-color: #6495ed; /* Blauw voor vertrouwenscontact */
+}
+
+.contact-card-header {
+  background-color: var(--accent-color);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.contact-card-header i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-card.blue-highlight .contact-card-header i {
+  color: #6495ed; /* Blauw voor vertrouwenscontact */
+}
+
+.contact-card-header h3 {
+  margin: 0;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-card-content {
+  padding: var(--spacing-lg);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Content Styling */
+.contact-card-content p {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.contact-card-content p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-card-content p i {
+  color: var(--primary-color);
+  min-width: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--spacing-sm);
+  font-size: 1.1rem;
+}
+
+.contact-card.blue-highlight .contact-card-content p i {
+  color: #6495ed; /* Blauw voor vertrouwenscontact */
+}
+
+.contact-card-content p a,
+.contact-card-content p span,
+.contact-card-content p strong {
+  flex: 1;
+  text-decoration: none;
+  color: var(--text-color);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.contact-card-content p a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.contact-card.blue-highlight .contact-card-content p a:hover {
+  color: #6495ed; /* Blauw voor vertrouwenscontact */
+}
+
+/* Vertrouwenscontact Styling */
+.contact-person {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-card-content hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #EEEEEE;
+  margin: var(--spacing-sm) 0 var(--spacing-sm);
+}
+
+.contact-name {
+  font-weight: 500;
+}
+
+/* Columns Styling for Commissarissen */
+.contact-card-content.columns {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+}
+
+.contact-card-content.columns .column {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-cards-grid.two-columns {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-card.wide-card {
+    grid-column: auto;
+  }
+  
+  .contact-card-content.columns {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .section-title i {
+    font-size: 1.2em;
+  }
+} 

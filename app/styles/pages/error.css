@@ -1,0 +1,212 @@
+/* Error Page Styles */
+.error-container {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.error-container h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary-color);
+}
+
+.error-container p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.error-message {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  color: var(--secondary-color);
+  border-left: 4px solid var(--primary-color);
+  text-align: left;
+  font-family: monospace;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.error-button {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.error-button i {
+  margin-right: var(--spacing-sm);
+}
+
+.error-button.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.error-button.primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-button.secondary {
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+}
+
+.error-button.secondary:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Error Page (for critical errors) */
+.global-error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: var(--spacing-lg);
+}
+
+.global-error-container {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-xl);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.global-error-logo {
+  margin-bottom: var(--spacing-lg);
+}
+
+.global-error-logo img {
+  height: 80px;
+  width: auto;
+}
+
+.global-error-icon {
+  font-size: 4rem;
+  color: #ff5800; /* Primary color, hardcoded for global error page */
+  margin-bottom: var(--spacing-md);
+}
+
+.global-error-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: #333333; /* Secondary color, hardcoded for global error page */
+}
+
+.global-error-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.global-error-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.global-error-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.global-error-button i {
+  margin-right: 8px;
+}
+
+.global-error-button {
+  background-color: #ff5800;
+  color: white;
+}
+
+.global-error-button:hover {
+  background-color: #e65000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.global-error-button.secondary {
+  background-color: #f1f1f1;
+  color: #333333;
+  border: 1px solid #ddd;
+}
+
+.global-error-button.secondary:hover {
+  background-color: #e9e9e9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .error-container,
+  .global-error-container {
+    padding: var(--spacing-lg);
+  }
+  
+  .error-actions,
+  .global-error-actions {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .error-button,
+  .global-error-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .error-container h2,
+  .global-error-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .error-icon,
+  .global-error-icon {
+    font-size: 3rem;
+  }
+} 

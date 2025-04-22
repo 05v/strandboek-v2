@@ -1,0 +1,354 @@
+/* Document Page Styles */
+
+/* Intro section */
+.documents-intro {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.section-title i {
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
+  font-size: 1.4em;
+}
+
+.section-intro {
+  max-width: 800px;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.5;
+}
+
+/* Search bar */
+.document-search-bar {
+  margin-bottom: var(--spacing-md);
+  background-color: var(--accent-color);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-text);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+}
+
+.clear-search {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+.clear-search:hover {
+  color: var(--primary-color);
+}
+
+/* Results counter */
+.results-counter {
+  margin-bottom: var(--spacing-md);
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+/* Category tabs */
+.document-categories {
+  margin-bottom: var(--spacing-md);
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+}
+
+.category-tab {
+  background: transparent;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.category-tab:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.category-tab.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Category-specific colors */
+.category-tab[data-category="reddingsbrigade"] {
+  border-bottom: 3px solid transparent;
+}
+
+.category-tab[data-category="reddingsbrigade"]:hover,
+.category-tab[data-category="reddingsbrigade"].active {
+  border-bottom-color: #ff5800; /* Primaire kleur */
+}
+
+.category-tab[data-category="ehbo"] {
+  border-bottom: 3px solid transparent;
+}
+
+.category-tab[data-category="ehbo"]:hover,
+.category-tab[data-category="ehbo"].active {
+  border-bottom-color: #e53935; /* Rood voor EHBO */
+}
+
+.category-tab[data-category="water"] {
+  border-bottom: 3px solid transparent;
+}
+
+.category-tab[data-category="water"]:hover,
+.category-tab[data-category="water"].active {
+  border-bottom-color: #1976d2; /* Blauw voor water */
+}
+
+.category-tab[data-category="land"] {
+  border-bottom: 3px solid transparent;
+}
+
+.category-tab[data-category="land"]:hover,
+.category-tab[data-category="land"].active {
+  border-bottom-color: #388e3c; /* Groen voor land */
+}
+
+.category-tab[data-category="overige"] {
+  border-bottom: 3px solid transparent;
+}
+
+.category-tab[data-category="overige"]:hover,
+.category-tab[data-category="overige"].active {
+  border-bottom-color: #7e57c2; /* Paars voor overige */
+}
+
+/* Documents grid */
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.document-item {
+  height: 100%;
+}
+
+.document-card {
+  display: flex;
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-color);
+  text-decoration: none;
+  height: 100%;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Document category colors */
+.document-card[data-category="reddingsbrigade"] {
+  border-left-color: #ff5800; /* Primaire kleur */
+}
+
+.document-card[data-category="ehbo"] {
+  border-left-color: #e53935; /* Rood voor EHBO */
+}
+
+.document-card[data-category="water"] {
+  border-left-color: #1976d2; /* Blauw voor water */
+}
+
+.document-card[data-category="land"] {
+  border-left-color: #388e3c; /* Groen voor land */
+}
+
+.document-card[data-category="overige"] {
+  border-left-color: #7e57c2; /* Paars voor overige */
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.document-icon {
+  flex-shrink: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3px;
+  width: 40px;
+}
+
+/* Document icon colors based on category */
+.document-card[data-category="reddingsbrigade"] .document-icon {
+  color: #ff5800; /* Primaire kleur */
+}
+
+.document-card[data-category="ehbo"] .document-icon {
+  color: #e53935; /* Rood voor EHBO */
+}
+
+.document-card[data-category="water"] .document-icon {
+  color: #1976d2; /* Blauw voor water */
+}
+
+.document-card[data-category="land"] .document-icon {
+  color: #388e3c; /* Groen voor land */
+}
+
+.document-card[data-category="overige"] .document-icon {
+  color: #7e57c2; /* Paars voor overige */
+}
+
+.document-info {
+  flex: 1;
+}
+
+.document-info h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+.document-description {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: 0.9rem;
+  color: var(--light-text);
+  line-height: 1.4;
+}
+
+.document-category {
+  display: inline-block;
+  font-size: 0.8rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+/* Category-specific badge colors */
+.document-category.reddingsbrigade {
+  background-color: #fff0eb;
+  color: #ff5800;
+}
+
+.document-category.ehbo {
+  background-color: #ffeaea;
+  color: #e53935;
+}
+
+.document-category.water {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.document-category.land {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.document-category.overige {
+  background-color: #f3e5f5;
+  color: #7e57c2;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  color: var(--light-text);
+}
+
+.empty-state i {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--border-color);
+}
+
+.empty-state h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--secondary-color);
+}
+
+.empty-state p {
+  margin-bottom: var(--spacing-md);
+}
+
+.reset-button {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-tabs {
+    justify-content: center;
+  }
+  
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .document-card {
+    padding: var(--spacing-md);
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+} 

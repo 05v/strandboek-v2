@@ -1,0 +1,238 @@
+/* Styles for Guideline/Information pages */
+
+/* General Layout */
+.guideline-section {
+  margin: 3rem 0;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.guideline-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.guideline-header i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.guideline-header h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.guideline-content {
+  padding: 35px;
+}
+
+.guideline-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin: 2rem 0 1rem;
+}
+
+.section-title i {
+  color: var(--primary-color);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+/* Source Document Box */
+.source-document {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #EEEEEE;
+}
+
+.source-document p {
+  margin-bottom: 15px;
+}
+
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.pdf-link i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Criteria card styles */
+.criteria-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.criteria-item {
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.criteria-item i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.criteria-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.criteria-item p {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.criteria-requirements {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.criteria-requirements li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.criteria-requirements li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.or-divider {
+  text-align: center;
+  font-weight: bold;
+  margin: 25px 0;
+  color: #666;
+  position: relative;
+}
+
+.or-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+.or-divider span {
+  display: inline-block;
+  background-color: var(--accent-color);
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.benefits-list,
+.numbered-list {
+  padding-left: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.benefits-list li,
+.numbered-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.numbered-list {
+  counter-reset: item;
+  list-style-type: none;
+}
+
+.numbered-list li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.numbered-list li:before {
+  content: counter(item) ".";
+  position: absolute;
+  left: -1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .guideline-section {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .guideline-header i {
+    font-size: 2rem;
+  }
+  
+  .guideline-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .criteria-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .guideline-content {
+    padding: 20px;
+  }
+} 
