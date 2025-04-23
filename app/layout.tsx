@@ -4,6 +4,7 @@ import './styles/globals.css'
 export const metadata: Metadata = {
   title: 'Strandboek - Reddingsbrigade Zandvoort',
   description: 'Informatieportaal voor leden van de Reddingsbrigade Zandvoort',
+  viewport: 'width=device-width, initial-scale=1.0',
 }
 
 export default function RootLayout({

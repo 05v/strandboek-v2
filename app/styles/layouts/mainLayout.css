@@ -32,6 +32,9 @@ main {
   color: var(--secondary-color);
   font-size: 2.3rem; /* Iets groter voor betere leesbaarheid */
   font-weight: 700; /* Dikker voor betere zichtbaarheid */
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero p {
@@ -39,8 +42,32 @@ main {
   color: var(--light-text);
   max-width: 600px;
   margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .content-section {
   padding: var(--spacing-xl) 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+    word-break: break-word;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
 } 
