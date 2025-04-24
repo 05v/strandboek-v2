@@ -2,6 +2,7 @@ import { InfoCardDetail } from '../types';
 import { postProceduresDetail } from './algemeen/postProcedures';
 import { roepnummersDetail } from './algemeen/roepnummers';
 import { opleidingstrajectenDetail } from './algemeen/opleidingstrajecten';
+import { functieprofielPostcommandantDetail } from './algemeen/functieprofielPostcommandant';
 import { rhrHandleidingDetail } from './operationeel/rhrHandleiding';
 import { externeSystemenDetail } from './operationeel/externeSystemen';
 import { zandvoortKaartDetail } from './operationeel/zandvoortKaart';
@@ -24,13 +25,18 @@ import { actiefLidDetail } from './richtlijnen/actiefLid';
 import { psychosocialeOndersteuningDetail } from './richtlijnen/psychosocialeOndersteuning';
 import { evaluatiemethodeInzetDetail } from './richtlijnen/evaluatiemethodeInzet';
 import { besmettingsaccidentDetail } from './richtlijnen/besmettingsaccident';
+import { convenantVRKDetail } from './richtlijnen/convenantVRK';
 import { alarmploegWerkwijzeDetail } from './operationeel/alarmploegWerkwijze';
+import { kustwachthelikopterInfoDetail } from './handleiding/kustwachthelikopterInfo';
+import { heliOpStrandDetail } from './operationeel/heliOpStrand';
+import { watersportZoneringDetail } from './handleiding/watersportZonering';
 
 // Collection of all card details
 export const cardDetails: Record<string, InfoCardDetail> = {
   'post-procedures': postProceduresDetail,
   'roepnummers': roepnummersDetail,
   'opleidingstrajecten': opleidingstrajectenDetail,
+  'functieprofiel-postcommandant': functieprofielPostcommandantDetail,
   'telefoonlijst': telefoonlijstDetail,
   'rhr-handleiding': rhrHandleidingDetail,
   'externe-systemen': externeSystemenDetail,
@@ -50,10 +56,14 @@ export const cardDetails: Record<string, InfoCardDetail> = {
   'sociale-media-richtlijnen': socialeMediaRichtlijnenDetail,
   'brancherichtlijn-og': optischeGeluidssignalenDetail,
   'actief-lid': actiefLidDetail,
+  'convenant-vrk': convenantVRKDetail,
   'protocol-psychosociale-ondersteuning': psychosocialeOndersteuningDetail,
   'protocol-evaluatiemethode-inzet': evaluatiemethodeInzetDetail,
   'protocol-besmettingsaccident': besmettingsaccidentDetail,
   'werkwijze-alarmploeg': alarmploegWerkwijzeDetail,
+  'kustwachthelikopter-info': kustwachthelikopterInfoDetail,
+  'heli-op-strand': heliOpStrandDetail,
+  'watersport-zonering': watersportZoneringDetail,
   // Add more card details as they're created
 };
 

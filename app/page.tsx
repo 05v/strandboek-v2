@@ -14,6 +14,32 @@ export default function HomePage() {
     >
       <section className="content-section">
         <div className="container">
+          <div className="info-section mb-5">
+            <h2><i className="fas fa-info-circle"></i> Over dit informatieportaal</h2>
+            <div className="info-card">
+              <div className="info-card-content">
+                <p>
+                  Dit is een moderne versie van het <a href="https://sites.google.com/zrb.info/strandboek-digitaal/" target="_blank" rel="noopener noreferrer">Strandboek Digitaal</a>. 
+                  Deze website bevat inzetvoorstellen op een overzichtelijke manier, vergelijkbaar met 
+                  <a href="https://www.reddingsbrigade-meldkamer.nl/Inzetvoorstellen.html" target="_blank" rel="noopener noreferrer"> reddingsbrigade-meldkamer.nl</a>, 
+                  bedoeld om snel terug te vinden wat je moet doen in specifieke situaties.
+                </p>
+                <p>
+                  Documenten zijn ook snel toegankelijk via directe links, vergelijkbaar met de opzet op 
+                  <a href="https://www.reddingsbrigade-meldkamer.nl/Documenten.html" target="_blank" rel="noopener noreferrer"> reddingsbrigade-meldkamer.nl</a>.
+                </p>
+                <div className="important-note mt-3">
+                  <p><strong>Over de inhoud:</strong> De "verkorte" pagina's zijn samenvattingen van uitgebreide documenten en bedoeld om snel de belangrijkste informatie te kunnen lezen. Bij elke samenvatting staat het originele document als referentie. Voor definitieve en volledige informatie raden we aan het originele document te raadplegen.</p>
+                </div>
+                <div className="contact-info mt-3">
+                  <p><strong>Feedback:</strong> Mocht je informatie missen in een samenvatting of heb je suggesties voor verbeteringen, neem dan contact op met:</p>
+                  <p><i className="fas fa-user"></i> Vlad Verheij</p>
+                  <p><i className="fas fa-phone"></i> <a href="tel:+31648127951">+31 6 48127951</a> (telefoon of WhatsApp)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="quick-links-section">
             <h2><i className="fas fa-tools"></i> Operationele Zaken</h2>
             <div className="quick-links-grid">
@@ -39,7 +65,7 @@ export default function HomePage() {
               </a>
               <a href="https://www.strandveilig.nl/beschikbaar/#/login" className="quick-link" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-water"></i>
-                <h3>Kustwacht in/uit melden</h3>
+                <h3>Strandveilig - Kustwacht in/uit melden</h3>
               </a>
               <a href="https://www.zrb.info/" className="quick-link" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-info-circle"></i>

@@ -28,9 +28,9 @@ export default function ContactPage() {
                 <div className="contact-card-content">
                   <p><i className="fas fa-link"></i> <a href="https://www.zrb.info" target="_blank" rel="noopener noreferrer">www.zrb.info</a></p>
                   <p><i className="fas fa-envelope"></i> <a href="mailto:bestuur@zrb.info">bestuur@zrb.info</a></p>
-                  <p><i className="fas fa-building"></i> <span>Linnaeusstraat 2, 2041 BR, Zandvoort</span></p>
-                  <p><i className="fas fa-hashtag"></i> <span>RSIN: 34.57.138</span></p>
-                  <p><i className="fas fa-address-card"></i> <span>KVK: 40594918</span></p>
+                  <p><i className="fas fa-building"></i> <a href="https://maps.google.com/?q=Linnaeusstraat+2,+2041+BR,+Zandvoort" target="_blank" rel="noopener noreferrer">Linnaeusstraat 2, 2041 BR, Zandvoort</a></p>
+                  <p><i className="fas fa-hashtag"></i> <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/anbi/anbi" target="_blank" rel="noopener noreferrer">RSIN: 34.57.138</a></p>
+                  <p><i className="fas fa-address-card"></i> <a href="https://www.kvk.nl/zoeken/?source=all&q=40594918" target="_blank" rel="noopener noreferrer">KVK: 40594918</a></p>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 </div>
                 <div className="contact-card-content">
                   <p><i className="fas fa-envelope"></i> <a href="mailto:secretariaat@zrb.info">secretariaat@zrb.info</a></p>
-                  <p><i className="fas fa-building"></i> <span>Linnaeusstraat 2, 2041 BR, Zandvoort</span></p>
+                  <p><i className="fas fa-building"></i> <a href="https://maps.google.com/?q=Linnaeusstraat+2,+2041+BR,+Zandvoort" target="_blank" rel="noopener noreferrer">Linnaeusstraat 2, 2041 BR, Zandvoort</a></p>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <h3>Post Kazerne 'Zandvoort'</h3>
                 </div>
                 <div className="contact-card-content">
-                  <p><i className="fas fa-map-marker-alt"></i> <span>Linnaeusstraat 2, 2041 BR, Zandvoort</span></p>
+                  <p><i className="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Linnaeusstraat+2,+2041+BR,+Zandvoort" target="_blank" rel="noopener noreferrer">Linnaeusstraat 2, 2041 BR, Zandvoort</a></p>
                   <p><i className="fas fa-phone"></i> <a href="tel:+31233690081">023 – 369 00 81</a></p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                   <h3>Reddingspost Piet Oud 'Noord'</h3>
                 </div>
                 <div className="contact-card-content">
-                  <p><i className="fas fa-map-marker-alt"></i> <span>Boulevard Barnaart 50, 2041 JA, Zandvoort</span></p>
+                  <p><i className="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Boulevard+Barnaart+50,+2041+JA,+Zandvoort" target="_blank" rel="noopener noreferrer">Boulevard Barnaart 50, 2041 JA, Zandvoort</a></p>
                   <p><i className="fas fa-phone"></i> <a href="tel:+31235712376">023 – 571 23 76</a></p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <h3>Reddingspost Ernst Brokmeier 'Zuid'</h3>
                 </div>
                 <div className="contact-card-content">
-                  <p><i className="fas fa-map-marker-alt"></i> <span>Boulevard Paulus Loot 66, 2042 AE, Zandvoort</span></p>
+                  <p><i className="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Boulevard+Paulus+Loot+66,+2042+AE,+Zandvoort" target="_blank" rel="noopener noreferrer">Boulevard Paulus Loot 66, 2042 AE, Zandvoort</a></p>
                   <p><i className="fas fa-phone"></i> <a href="tel:+31235712687">023 – 571 26 87</a></p>
                 </div>
               </div>
@@ -214,8 +214,8 @@ export default function ContactPage() {
                 <div className="contact-card-content">
                   <p>Een gift kunt u doen aan:</p>
                   <p><i className="fas fa-building"></i> <strong>Zandvoortse Reddingsbrigade</strong></p>
-                  <p><i className="fas fa-map-marker-alt"></i> <span>Linnaeusstraat 2, 2041 BR, Zandvoort</span></p>
-                  <p><i className="fas fa-university"></i> <strong>Rabobank:</strong> <span>NL63 RABO 0326 3091 52</span></p>
+                  <p><i className="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Linnaeusstraat+2,+2041+BR,+Zandvoort" target="_blank" rel="noopener noreferrer">Linnaeusstraat 2, 2041 BR, Zandvoort</a></p>
+                  <p><i className="fas fa-university"></i> <strong>Rabobank:</strong> <a href="https://www.rabobank.nl/" target="_blank" rel="noopener noreferrer">NL63 RABO 0326 3091 52</a></p>
                 </div>
               </div>
             </div>

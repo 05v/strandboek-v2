@@ -399,12 +399,13 @@
 .info-cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
 }
 
 .info-cards-grid.two-columns {
   grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
 }
 
 .info-card {
@@ -570,6 +571,7 @@
 @media (max-width: 768px) {
   .info-cards-grid.two-columns {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
   
   .info-detail-header {

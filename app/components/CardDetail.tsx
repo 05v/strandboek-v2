@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import Link from 'next/link';
 import { InfoCardDetail } from '../utils/types';
 
@@ -10,6 +10,31 @@ interface CardDetailProps {
  * Component for rendering an information card's detailed view
  */
 export default function CardDetail({ cardDetail }: CardDetailProps) {
+  // Force layout recalculation before the component is painted
+  useLayoutEffect(() => {
+    // Reset any potential scroll position
+    window.scrollTo(0, 0);
+  }, []);
+  
+  // Add effect to reset any height and layout issues when component mounts
+  useEffect(() => {
+    // Force browser to recalculate layout when component mounts or details change
+    const recalculateLayout = () => {
+      window.dispatchEvent(new Event('resize'));
+    };
+    
+    // Apply immediately and after a short delay to ensure proper rendering
+    recalculateLayout();
+    const timeoutId = setTimeout(recalculateLayout, 100);
+    
+    // Cleanup function to ensure proper layout when unmounting
+    return () => {
+      clearTimeout(timeoutId);
+      // Short timeout to let the browser recover the layout when navigating back
+      setTimeout(recalculateLayout, 100);
+    };
+  }, [cardDetail.id]);
+  
   return (
     <div className="info-detail-container">
       <div className="info-detail-header">

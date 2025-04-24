@@ -29,6 +29,14 @@ export const infoCards: InfoCard[] = [
     category: 'algemeen',
     url: '/informatie/opleidingstrajecten'
   },
+  {
+    id: 'functieprofiel-postcommandant',
+    title: 'Functieprofiel: Postcommandant',
+    description: 'Beschrijving van de rol, verantwoordelijkheden en vereiste competenties voor de functie van Postcommandant binnen de ZRB.',
+    icon: 'fas fa-user-tie',
+    category: 'algemeen',
+    url: '/informatie/functieprofiel-postcommandant'
+  },
   
   // Operationeel
   {
@@ -157,6 +165,14 @@ export const infoCards: InfoCard[] = [
     category: 'operationeel',
     url: 'https://drive.google.com/file/d/1d1BXeTnm4VR46M_qZxDVAdS59ofE-JyN/view',
     isExternal: true
+  },
+  {
+    id: 'heli-op-strand',
+    title: 'Heli op het Strand',
+    description: 'Werkafspraak voor het veilig begeleiden van de landing en het vertrek van trauma- en ambulancehelikopters op het strand.',
+    icon: 'fas fa-helicopter',
+    category: 'operationeel',
+    url: '/informatie/heli-op-strand'
   },
   {
     id: 'werkwijze-alarmploeg',
@@ -324,6 +340,14 @@ export const infoCards: InfoCard[] = [
     url: '/informatie/actief-lid'
   },
   {
+    id: 'convenant-vrk',
+    title: 'Convenant VRK – Reddingsbrigades in Kennemerland',
+    description: 'Samenwerkingsafspraken tussen Veiligheidsregio Kennemerland en reddingsbrigades voor reguliere en grootschalige hulpverlening.',
+    icon: 'fas fa-handshake',
+    category: 'richtlijnen',
+    url: '/informatie/convenant-vrk'
+  },
+  {
     id: 'stroomdiagram-reanimatie',
     title: 'Stroomdiagram reanimatie drenkeling',
     description: 'Stapsgewijs overzicht van reanimatieprotocol specifiek voor drenkelingen.',
@@ -372,20 +396,138 @@ export const infoCards: InfoCard[] = [
   
   // Handleiding/naslag
   {
-    id: 'handleiding-placeholder-1',
-    title: 'Handleiding 1',
-    description: 'Placeholder voor handleiding/naslag kaart 1.',
-    icon: 'fas fa-book',
+    id: 'handleiding-zoll-aed',
+    title: 'Handleiding ZOLL AED',
+    description: 'Officiële handleiding voor gebruik en onderhoud van de ZOLL AED defibrillator.',
+    icon: 'fas fa-heartbeat',
     category: 'handleiding',
-    url: '/informatie/handleiding-placeholder-1'
+    url: 'https://drive.google.com/open?id=1tAKcm0QikOw66bpSRaiQei_mUV2lsqjf&usp=drive_copy',
+    isExternal: true
   },
   {
-    id: 'handleiding-placeholder-2',
-    title: 'Handleiding 2',
-    description: 'Placeholder voor handleiding/naslag kaart 2.',
+    id: 'kustwachthelikopter-info',
+    title: 'Informatie Kustwachthelikopter',
+    description: 'Technische specificaties, inzetcriteria en veiligheidsrichtlijnen voor de Leonardo AW189 Kustwachthelikopter.',
+    icon: 'fas fa-helicopter',
+    category: 'handleiding',
+    url: '/informatie/kustwachthelikopter-info'
+  },
+  {
+    id: 'instructie-video-aed',
+    title: 'Instructie video nieuwe AED (jan 2023)',
+    description: 'Instructievideo voor het gebruik van de nieuwe AED-apparatuur.',
+    icon: 'fas fa-video',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1cRBPyyx8BgRgOn-ydn9739P1qq4cqAEC&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'rhr-korte-handleiding',
+    title: 'RHR korte handleiding zomerregistratie',
+    description: 'Beknopte handleiding voor de zomerregistratie in het RHR-systeem.',
+    icon: 'fas fa-clipboard-list',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1-Dd4uhKyFKbo83dh54farrNmmW_6LBVl&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'rhr-handleiding-algemeen',
+    title: 'RHR handleiding algemeen (v2.0)',
+    description: 'Volledige handleiding voor het gebruik van het Reddingsbrigade Hulpverleningsregistratie systeem.',
     icon: 'fas fa-book',
     category: 'handleiding',
-    url: '/informatie/handleiding-placeholder-2'
+    url: 'https://drive.google.com/open?id=1ENIJK_HGszbEtGrjc2W9tKbrBiRWJqAO&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'dagelijks-onderhoud-rwc',
+    title: 'Dagelijks onderhoud RWC (waterscooters)',
+    description: 'Handleiding voor het dagelijkse onderhoud van RWC (Rescue Water Craft) waterscooters.',
+    icon: 'fas fa-water',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1f27w9zDDuZ7IwSKVb7mG1fu2PlwNlyHy&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'gebruiksaanwijzing-motorola',
+    title: 'Gebruiksaanwijzing Motorola portofoon MTP6650',
+    description: 'Handleiding voor gebruik en bediening van de Motorola portofoon MTP6650.',
+    icon: 'fas fa-broadcast-tower',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1yxtU6DTFZosVlXt3HDYpSybRrfsHwdhl&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'instructie-gebruik-tent',
+    title: 'Instructie gebruik tent',
+    description: 'Instructie voor opzetten, gebruik en opbergen van de PR-tent. Alleen voor PR, Demo en Trainingsdoeleinden.',
+    icon: 'fas fa-campground',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1t9K-cxxOY059N3fFvhraYr-sOR4xYiPs&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'zrb-presentatie',
+    title: 'ZRB presentatie - voorlichting scholen',
+    description: 'Presentatie gebruikt voor voorlichting aan scholen over de Zandvoortse Reddingsbrigade (2021).',
+    icon: 'fas fa-chalkboard-teacher',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1hfQ1bbtsjXxbAo065rTAQn16gB-uYX0N&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'bestuurstaken-overzicht',
+    title: 'Bestuurstaken overzicht 2021',
+    description: 'Overzicht van taken en verantwoordelijkheden binnen het bestuur van de Zandvoortse Reddingsbrigade.',
+    icon: 'fas fa-tasks',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=103xXhsxqZwkZva_PlhI0hCcOgUVvAzey&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'apv-zandvoort',
+    title: 'Naslag - APV Zandvoort 2017 (update 2020)',
+    description: 'Algemene Plaatselijke Verordening Zandvoort 2017, bijgewerkt in 2020.',
+    icon: 'fas fa-gavel',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1KMZaTztUBFsRUQuQN9xPK7Vu20X84C7N&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'naslag-psychosociale-ondersteuning',
+    title: 'Naslag - Psychosociale Ondersteuning Geüniformeerden',
+    description: 'Richtlijn psychosociale ondersteuning geüniformeerden uit 2012.',
+    icon: 'fas fa-heart',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1JQbqsCODt4D-qYZ4j55V4QLYuRuxrKa7&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'sea-doo-operators-guide',
+    title: 'Sea Doo Waterscooter GTI 2020 Operators Guide',
+    description: 'Handleiding voor de bediening en het gebruik van de Sea Doo GTI waterscooter uit 2020.',
+    icon: 'fas fa-ship',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1yF8M6K1VROXigK2m8aC8kIXJ6x88qfa9&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'sea-doo-guide-sheet',
+    title: 'Sea Doo Waterscooter Guide Sheet',
+    description: 'Beknopt overzicht met belangrijke informatie voor gebruik van de Sea Doo waterscooter.',
+    icon: 'fas fa-file-alt',
+    category: 'handleiding',
+    url: 'https://drive.google.com/open?id=1ioOeLLCQsVOpWwS6S2ULjA8XePHUBeY-Yl2bOufkM98&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'watersport-zonering',
+    title: 'Nota Watersportzonering Zandvoort – 2020',
+    description: 'Gemeentelijke richtlijnen voor watersportzones, veiligheid en gedragsregels voor alle strandgebruikers.',
+    icon: 'fas fa-water',
+    category: 'handleiding',
+    url: 'https://drive.google.com/file/d/1-kYykWemj6E3Lrc1oD-Hex-Ucm6TR36e/view',
+    isExternal: true
   },
   
   // Factsheets

@@ -151,4 +151,119 @@ p {
   .container {
     padding: 0 var(--spacing-md);
   }
+}
+
+/* Layout Fix for Card Grids */
+.info-cards-grid {
+  min-height: 0; /* Prevents flex items from expanding beyond their content */
+  height: auto !important; /* Overrides any inline height that might be causing issues */
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.info-cards-grid.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Section spacing fixes */
+.section-divider {
+  overflow: visible;
+}
+
+/* Override for Safari browser behavior */
+@supports (-webkit-appearance:none) {
+  .info-cards-grid {
+    display: grid !important;
+  }
+  
+  .info-cards-grid.two-columns {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .info-cards-grid.two-columns {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+/* Organizational Chart Styling */
+.organizational-chart {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius-md);
+}
+
+.organizational-chart ul {
+  list-style-type: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.organizational-chart ul:first-child {
+  padding-left: 0;
+}
+
+.organizational-chart li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+  margin-bottom: 10px;
+}
+
+.organizational-chart li::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 15px;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+.organizational-chart li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.organizational-chart ul > li:first-child::after {
+  top: 15px;
+  height: calc(100% - 15px);
+}
+
+.organizational-chart ul > li:last-child::after {
+  height: 15px;
+}
+
+.organizational-chart ul:first-child > li::before,
+.organizational-chart ul:first-child > li::after {
+  display: none;
+}
+
+.organizational-chart li span {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-sm);
+  z-index: 1;
+  position: relative;
 } 
