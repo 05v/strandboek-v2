@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import '../styles/pages/informatie.css'
 import Link from 'next/link'
@@ -9,6 +9,20 @@ import { infoCards } from '../utils/data/infoCards'
 export default function InformatiePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('all');
+
+  // Laden van CSS direct bij component mount
+  useEffect(() => {
+    // Functie om CSS te laden
+    const loadCSS = () => {
+      const infoCSS = document.createElement('link');
+      infoCSS.rel = 'stylesheet';
+      infoCSS.href = '/styles/pages/informatie.css';
+      document.head.appendChild(infoCSS);
+    };
+    
+    // CSS direct laden
+    loadCSS();
+  }, []);
 
   // Filter de kaarten op basis van zoekterm en categorie
   const filteredCards = infoCards.filter(card => {

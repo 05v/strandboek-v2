@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import MainLayout from '../../layouts/MainLayout'
 import Link from 'next/link'
+// CSS bestanden nu in de RootLayout geladen
+// Specifieke stijlen nog steeds hier laden
 import '../../styles/pages/kenniskaart.css'
 import '../../styles/pages/informatieDetail.css'
 import { infoCards } from '../../utils/data/infoCards'
@@ -16,6 +18,25 @@ export default function KenniskaartDetailPage() {
   const [cardInfo, setCardInfo] = useState<InfoCard | null>(null);
   const [cardDetail, setCardDetail] = useState<InfoCardDetail | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  
+  // Laden van CSS direct bij component mount
+  useEffect(() => {
+    // Functie om CSS te laden
+    const loadCSS = () => {
+      const kenniskaartCSS = document.createElement('link');
+      kenniskaartCSS.rel = 'stylesheet';
+      kenniskaartCSS.href = '/styles/pages/kenniskaart.css';
+      document.head.appendChild(kenniskaartCSS);
+      
+      const detailCSS = document.createElement('link');
+      detailCSS.rel = 'stylesheet';
+      detailCSS.href = '/styles/pages/informatieDetail.css';
+      document.head.appendChild(detailCSS);
+    };
+    
+    // CSS direct laden
+    loadCSS();
+  }, []);
 
   useEffect(() => {
     // Zoek de kaart op basis van de slug in de URL

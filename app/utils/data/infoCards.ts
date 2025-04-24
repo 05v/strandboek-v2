@@ -532,37 +532,113 @@ export const infoCards: InfoCard[] = [
   
   // Factsheets
   {
-    id: 'factsheet-placeholder-1',
-    title: 'Factsheet 1',
-    description: 'Placeholder voor factsheet kaart 1.',
+    id: 'factsheet-zandvoort',
+    title: 'Factsheet Reddingsbrigade Zandvoort',
+    description: 'Overzicht van voertuigen, contactgegevens, werkgebied en ploegen van de Zandvoortse Reddingsbrigade.',
     icon: 'fas fa-file-invoice',
     category: 'factsheets',
-    url: '/informatie/factsheet-placeholder-1'
+    url: 'https://drive.google.com/open?id=1hc_XDWHhi6hUa9BwXuAckHMcxGHcu-0d&usp=drive_copy',
+    isExternal: true
   },
   {
-    id: 'factsheet-placeholder-2',
-    title: 'Factsheet 2',
-    description: 'Placeholder voor factsheet kaart 2.',
+    id: 'factsheet-heemskerk',
+    title: 'Factsheet Reddingsbrigade Heemskerk',
+    description: 'Overzicht van voertuigen, contactgegevens, werkgebied en ploegen van de Heemskerkse Reddingsbrigade.',
     icon: 'fas fa-file-invoice',
     category: 'factsheets',
-    url: '/informatie/factsheet-placeholder-2'
+    url: 'https://drive.google.com/open?id=1O1eUUoLfSp8ri5kEbinyP2slQjaUmFlO&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'factsheet-bloemendaal',
+    title: 'Factsheet Reddingsbrigade Bloemendaal',
+    description: 'Overzicht van voertuigen, contactgegevens, werkgebied en ploegen van de Bloemendaalse Reddingsbrigade.',
+    icon: 'fas fa-file-invoice',
+    category: 'factsheets',
+    url: 'https://drive.google.com/open?id=1VDlX1_uQWw9lxdr1H61hPeb-lZdtlDsB&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'factsheet-wijk-aan-zee',
+    title: 'Factsheet Reddingsbrigade Wijk aan Zee',
+    description: 'Overzicht van voertuigen, contactgegevens, werkgebied en ploegen van de Wijk aan Zeese Reddingsbrigade.',
+    icon: 'fas fa-file-invoice',
+    category: 'factsheets',
+    url: 'https://drive.google.com/open?id=1e-7AoAI0f2pIOvHTF6D9Z_TSz5Q3_gFC&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'factsheet-ijmuiden',
+    title: 'Factsheet Reddingsbrigade IJmuiden',
+    description: 'Overzicht van voertuigen, contactgegevens, werkgebied en ploegen van de IJmuidense Reddingsbrigade.',
+    icon: 'fas fa-file-invoice',
+    category: 'factsheets',
+    url: 'https://drive.google.com/open?id=1SaXuTmjG4rkmz-jRPC20WcXnFoC9cONu&usp=drive_copy',
+    isExternal: true
   },
   
   // Formulieren
   {
-    id: 'formulier-placeholder-1',
-    title: 'Formulier 1',
-    description: 'Placeholder voor formulier kaart 1.',
-    icon: 'fas fa-clipboard',
+    id: 'incident-registratie-pdf',
+    title: 'ZRB Registratieformulier Incidenten (PDF)',
+    description: 'Officieel ZRB formulier voor het registreren van incidenten (PDF versie, mei 2023, v1.3).',
+    icon: 'fas fa-file-pdf',
     category: 'formulieren',
-    url: '/informatie/formulier-placeholder-1'
+    url: 'https://drive.google.com/open?id=14EF2uMb4-hv1098kuhSYG3K5XX5zxLP7&usp=drive_copy',
+    isExternal: true
   },
   {
-    id: 'formulier-placeholder-2',
-    title: 'Formulier 2',
-    description: 'Placeholder voor formulier kaart 2.',
-    icon: 'fas fa-clipboard',
+    id: 'incident-registratie-doc',
+    title: 'ZRB Registratieformulier Incidenten (DOC)',
+    description: 'Officieel ZRB formulier voor het registreren van incidenten (Word versie, mei 2023, v1.3).',
+    icon: 'fas fa-file-word',
     category: 'formulieren',
-    url: '/informatie/formulier-placeholder-2'
+    url: 'https://drive.google.com/open?id=1OTkqXlTLI9-8fQD-UiA2F2jDmEjVm2hi&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'onkosten-declaratie-pdf',
+    title: 'ZRB Onkosten Declaratie (PDF)',
+    description: 'Formulier voor het declareren van onkosten gemaakt voor de Zandvoortse Reddingsbrigade (PDF versie).',
+    icon: 'fas fa-file-invoice-dollar',
+    category: 'formulieren',
+    url: 'https://drive.google.com/open?id=1hrAFvPRnEdLZ3wA-wRilrr-oSUn816SO&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'onkosten-declaratie-docx',
+    title: 'ZRB Onkosten Declaratie (DOCX)',
+    description: 'Formulier voor het declareren van onkosten gemaakt voor de Zandvoortse Reddingsbrigade (Word versie).',
+    icon: 'fas fa-file-word',
+    category: 'formulieren',
+    url: 'https://drive.google.com/open?id=10D0djDUgvvuhssJ118r7XaFVOlGJcM4a&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'vim-nautische-partners',
+    title: 'VIM voor Nautische partners',
+    description: 'Veilig Incident Melden formulier voor gebruik bij incidenten met nautische partners.',
+    icon: 'fas fa-file-pdf',
+    category: 'formulieren',
+    url: 'https://drive.google.com/open?id=19Iq5fZgyXE9eqLH7nwAbU4wmk699gHoQ&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'melding-ongewenste-benadering',
+    title: 'Melding Ongewenste Benadering Lifeguards',
+    description: 'Formulier om ongewenste benadering van lifeguards te melden tijdens operationele diensten.',
+    icon: 'fas fa-exclamation-triangle',
+    category: 'formulieren',
+    url: 'https://drive.google.com/open?id=1G2GGrz3rhlkLcw0sObLCYaAojzFd-jr83zmGTFTjxaY&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'cscatt-evaluatie',
+    title: 'CSCATT - Evaluatie Formulier',
+    description: 'Evaluatieformulier voor kritieke incidenten volgens de CSCATT methodiek.',
+    icon: 'fas fa-clipboard-check',
+    category: 'formulieren',
+    url: 'https://drive.google.com/open?id=1bzGriFVw7k7aYXfvu0AWEE2dd9_J7E2b&usp=drive_copy',
+    isExternal: true
   }
 ]; 

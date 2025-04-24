@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './styles/globals.css'
+import './styles/criticalStyles.css'  // Import critical styles
 
 export const metadata: Metadata = {
   title: 'Strandboek - Reddingsbrigade Zandvoort',
@@ -26,6 +27,11 @@ export default function RootLayout({
           crossOrigin="anonymous" 
           referrerPolicy="no-referrer" 
         />
+        {/* Preload fonts to avoid layout shifts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* Pre-load critical CSS */}
+        <link rel="preload" href="/styles/criticalStyles.css" as="style" />
       </head>
       <body>
         {children}
