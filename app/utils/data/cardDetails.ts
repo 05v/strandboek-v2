@@ -16,7 +16,15 @@ import { kustwachtgebiedSOPDetail } from './operationeel/kustwachtgebiedSOP';
 import { inzetprotocolRBKNRMDetail } from './operationeel/inzetprotocolRBKNRM';
 // import { algemeneInformatieDetail } from './operationeel/algemeneInformatie';
 import { handboekNRVEenhedenDetail } from './operationeel/handboekNRVEenheden';
-// import { vogBeleidDetail } from './bestuur/vogBeleid';
+import { inzetDuingebiedDetail } from './duingebied/inzetDuingebied';
+import { vogBeleidDetail } from './bestuur/vogBeleid';
+import { socialeMediaRichtlijnenDetail } from './richtlijnen/socialeMediaRichtlijnen';
+import { optischeGeluidssignalenDetail } from './richtlijnen/optischeGeluidssignalen';
+import { actiefLidDetail } from './richtlijnen/actiefLid';
+import { psychosocialeOndersteuningDetail } from './richtlijnen/psychosocialeOndersteuning';
+import { evaluatiemethodeInzetDetail } from './richtlijnen/evaluatiemethodeInzet';
+import { besmettingsaccidentDetail } from './richtlijnen/besmettingsaccident';
+import { alarmploegWerkwijzeDetail } from './operationeel/alarmploegWerkwijze';
 
 // Collection of all card details
 export const cardDetails: Record<string, InfoCardDetail> = {
@@ -37,7 +45,15 @@ export const cardDetails: Record<string, InfoCardDetail> = {
   'inzetprotocol-rb-knrm': inzetprotocolRBKNRMDetail,
   // 'algemene-informatie': algemeneInformatieDetail,
   'handboek-nrv-eenheden': handboekNRVEenhedenDetail,
-  // 'vog-beleid': vogBeleidDetail,
+  'inzet-duingebied': inzetDuingebiedDetail,
+  'vog-beleid': vogBeleidDetail,
+  'sociale-media-richtlijnen': socialeMediaRichtlijnenDetail,
+  'brancherichtlijn-og': optischeGeluidssignalenDetail,
+  'actief-lid': actiefLidDetail,
+  'protocol-psychosociale-ondersteuning': psychosocialeOndersteuningDetail,
+  'protocol-evaluatiemethode-inzet': evaluatiemethodeInzetDetail,
+  'protocol-besmettingsaccident': besmettingsaccidentDetail,
+  'werkwijze-alarmploeg': alarmploegWerkwijzeDetail,
   // Add more card details as they're created
 };
 

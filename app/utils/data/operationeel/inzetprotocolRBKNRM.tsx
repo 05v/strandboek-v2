@@ -3,249 +3,57 @@ import { InfoCardDetail } from '../../types';
 
 export const inzetprotocolRBKNRMDetail: InfoCardDetail = {
   id: 'inzetprotocol-rb-knrm',
-  title: 'Inzetprotocol Reddingsbrigades & KNRM Lifeguards',
-  description: 'Samenwerkingsprotocol tussen Reddingsbrigades, KNRM Lifeguards en het Kustwachtcentrum voor alarmeringen en inzetten.',
+  title: 'Inzetprotocol Reddingsbrigades en KNRM Lifeguards',
+  description: 'Protocol voor alarmering en samenwerking tussen Kustwachtcentrum, Reddingsbrigades en KNRM Lifeguards bij incidenten aan de Nederlandse kust.',
   icon: 'fas fa-life-ring',
   category: 'operationeel',
-  intro: 'Dit protocol beschrijft de werkwijze voor inzet van Reddingsbrigades en KNRM Lifeguards bij watergerelateerde incidenten. Het omvat afspraken over alarmering, communicatie, en taken en verantwoordelijkheden in samenwerking met het Kustwachtcentrum (KWC).',
+  intro: 'Dit protocol regelt de alarmering en samenwerking tussen het Kustwachtcentrum (KWC), Reddingsbrigades (via Reddingsbrigade Nederland, RN) en KNRM Lifeguards voor incidenten op en nabij de Nederlandse kust.',
   sections: [
     {
-      title: 'Documentgegevens',
-      icon: 'fas fa-file-alt',
+      title: 'Basisinformatie Protocol',
+      icon: 'fas fa-info-circle',
       cards: [
         {
-          title: 'Inzetprotocol Reddingsbrigades & KNRM Lifeguards',
-          icon: 'fas fa-info-circle',
+          title: 'Doel en Toepassing',
+          icon: 'fas fa-bullseye',
           content: (
             <>
-              <div className="document-info">
-                <p><strong>Titel:</strong> Inzetprotocol Reddingsbrigades & KNRM Lifeguards</p>
-                <p><strong>Opgesteld door:</strong> Kustwachtcentrum, Reddingsbrigade Nederland, KNRM</p>
-                <p><strong>Versie:</strong> 2021-1.0</p>
-                <p><strong>Datum:</strong> 21 maart 2021</p>
-                <p><strong>Contact:</strong> info@reddingsbrigade.nl | Piket RN: 06-12392283 | KNRM Lifeguards: 06-10703411</p>
-              </div>
-            </>
-          )
-        }
-      ]
-    },
-    {
-      title: 'Inleiding & Achtergrond',
-      icon: 'fas fa-book',
-      cards: [
-        {
-          title: 'Achtergrond',
-          icon: 'fas fa-info-circle',
-          content: (
-            <>
-              <p>Het inzetprotocol regelt:</p>
-              <ul className="info-list">
-                <li>Toezicht op stranden in zomer door Reddingsbrigades en KNRM Lifeguards (hierna: RB).</li>
-                <li>Alarmploegen & KNRM-boten zijn 365 dagen per jaar, 24/7 inzetbaar.</li>
-              </ul>
+              <p>Het protocol regelt de alarmering en samenwerking tussen het Kustwachtcentrum (KWC), Reddingsbrigades (via Reddingsbrigade Nederland, RN) en KNRM Lifeguards voor incidenten op en nabij de Nederlandse kust.</p>
               
-              <p><strong>Incidentmeldingen kunnen binnenkomen via:</strong></p>
-              <ul className="info-list">
-                <li>Strandbezoekers → Regionale Meldkamer (RMK)</li>
-                <li>Kustwachtcentrum (KWC) Den Helder</li>
+              <p>Het betreft:</p>
+              <ul className="info-list checkmark">
+                <li>Toezicht door reddingsbrigades op stranden</li>
+                <li>Alarmering bij watergerelateerde incidenten (tot 1 km uit de kust)</li>
+                <li>Inzet van alarmploegen buiten reguliere bezettingstijden</li>
+                <li>Samenwerking met KNRM Reddingstations</li>
               </ul>
-              
-              <p>Inzet RB's is sneller dan KNRM bij incidenten dichtbij kustlijn.</p>
             </>
           )
         },
         {
-          title: 'Samenwerkende partijen',
+          title: 'Samenwerkende Partners',
           icon: 'fas fa-handshake',
           content: (
             <>
-              <ul className="info-list">
-                <li>Reddingsbrigade Nederland (RN)</li>
-                <li>KNRM Reddingstations</li>
-                <li>KNRM Lifeguards</li>
+              <ul className="info-list checkmark">
                 <li>Kustwachtcentrum (KWC)</li>
+                <li>Reddingsbrigade Nederland (RN)</li>
+                <li>KNRM (Reddingstations en Lifeguards)</li>
               </ul>
             </>
           )
         },
         {
-          title: 'Evaluatie',
-          icon: 'fas fa-sync-alt',
-          content: (
-            <>
-              <p>Jaarlijkse evaluatie van:</p>
-              <ul className="info-list">
-                <li>In-/uitmelden</li>
-                <li>Werkwijze & organisatie</li>
-                <li>Alarmeringsprioriteiten (bijv. kitesurfers)</li>
-                <li>Communicatie</li>
-              </ul>
-            </>
-          )
-        }
-      ]
-    },
-    {
-      title: 'Inzetwerkwijzen',
-      icon: 'fas fa-bell',
-      cards: [
-        {
-          title: 'Wanneer wordt gealarmeerd',
-          icon: 'fas fa-stopwatch',
-          content: (
-            <>
-              <ul className="info-list">
-                <li>Bij aanwezigheid strandploeg: reactietijd max. 2 min.</li>
-                <li>Bij alleen alarmploeg: reactietijd max. 10 min.</li>
-                <li>Geen RB beschikbaar? → KNRM + buurgemeente-RB wordt gealarmeerd.</li>
-              </ul>
-            </>
-          )
-        },
-        {
-          title: 'Waarvoor wordt gealarmeerd',
-          icon: 'fas fa-water',
-          content: (
-            <>
-              <ul className="info-list">
-                <li>Alleen voor watergerelateerde incidenten (zwemmers, drijvers, surfers).</li>
-                <li>Incidenten op strand (EHBO etc.) gaan naar Regionale Meldkamer.</li>
-                <li>Inzetgebied RB: tot max. 1 km uit de kust, volgens gemeentelijke indeling.</li>
-                <li>Bij grotere vaartuigen of onduidelijkheid → altijd ook KNRM alarmeren.</li>
-              </ul>
-            </>
-          )
-        },
-        {
-          title: 'Hoe wordt gealarmeerd',
-          icon: 'fas fa-broadcast-tower',
-          content: (
-            <>
-              <p>Via Vision-systeem KWC met geprogrammeerde capcodes.</p>
-              
-              <p><strong>Alarmeringsteksten bevatten:</strong></p>
-              <ul className="info-list">
-                <li>Incidenttype</li>
-                <li>Prioriteit (Prio 1 t/m 3)</li>
-                <li>Eenheidscodes (bijv. ZVTrbs = Zandvoort strandploeg)</li>
-              </ul>
-              
-              <p>Capcodebeheer via KNRM.</p>
-              
-              <p><strong>Prio-categorieën:</strong></p>
-              <ul className="info-list">
-                <li>Prio 1: Levensbedreigend / ernstige schade</li>
-                <li>Prio 2: Spoed, maar niet levensbedreigend</li>
-                <li>Prio 3: Oefeningen, afmeldingen, waarschuwen</li>
-              </ul>
-            </>
-          )
-        },
-        {
-          title: 'Voorbeelden alarmering',
-          icon: 'fas fa-comment-dots',
-          content: (
-            <>
-              <ul className="info-list">
-                <li>PRIO 2, AFGEDREVEN DRIJVEND OBJECT, ZVTrbs</li>
-                <li>PRIO 1, ZWEMMER IN PROBLEMEN, NAZrba / KAZrba / NAZ / KAZ</li>
-                <li>PRIO 1, VAARTUIG MOTOR / STUUR PROBLEMEN, VLI</li>
-              </ul>
-            </>
-          )
-        }
-      ]
-    },
-    {
-      title: 'Communicatie & Statusrapportage',
-      icon: 'fas fa-broadcast-tower',
-      cards: [
-        {
-          title: 'Aanwezigheid doorgeven',
-          icon: 'fas fa-calendar-check',
-          content: (
-            <>
-              <p>Via:</p>
-              <ul className="info-list">
-                <li>www.strandveilig.nl</li>
-                <li>Telefoon: 088-9584000 (bgg: 0900-0111)</li>
-                <li>Marifoon (kanaal 16)</li>
-              </ul>
-              
-              <p>Bij afwijkingen (buiten bloktijden) altijd melden</p>
-            </>
-          )
-        },
-        {
-          title: 'Alarmering & statusupdates',
-          icon: 'fas fa-bullhorn',
-          content: (
-            <>
-              <p><strong>Inmelden via:</strong></p>
-              <ul className="info-list">
-                <li>Marifoon kanaal 16 (voorkeur)</li>
-                <li>Telefoon: 0223-542300</li>
-              </ul>
-              
-              <div className="important-note">
-                <p><strong>Let op:</strong> Bij geen reactie binnen 2 min → KWC alarmeert andere eenheid</p>
-              </div>
-              
-              <p><strong>Statusmeldingen aan KWC:</strong></p>
-              <ul className="info-list">
-                <li>Status 1 = Onderweg</li>
-                <li>Status 2 = Ter plaatse</li>
-                <li>Status 3 = Afgehandeld</li>
-              </ul>
-              
-              <p><strong>SitRap's (situatierapportages) periodiek via:</strong></p>
-              <ul className="info-list">
-                <li>Marifoon / telefoon</li>
-                <li>OSC (On Scene Coördinator)</li>
-              </ul>
-            </>
-          )
-        }
-      ]
-    },
-    {
-      title: 'Aanvang & voorwaarden',
-      icon: 'fas fa-clipboard-check',
-      cards: [
-        {
-          title: 'Voorwaarden deelname',
-          icon: 'fas fa-check',
-          content: (
-            <>
-              <p>Start zomerseizoen: jaarlijks op 1 juni</p>
-              
-              <p><strong>RB moet voldoen aan:</strong></p>
-              <ul className="info-list">
-                <li>Structureel toezicht op kustgebied</li>
-                <li>Aansluiting bij afspraken inzetprotocol</li>
-                <li>Minimaal 1 natte inzetbare eenheid beschikbaar</li>
-              </ul>
-            </>
-          )
-        },
-        {
-          title: 'Kwaliteit & audits',
+          title: 'Evaluatie & Aandachtspunten',
           icon: 'fas fa-clipboard-check',
           content: (
             <>
-              <p>Werkbezoeken door Kustwacht in zomerperiode</p>
+              <p>Jaarlijkse evaluatie van de samenwerking en inzet. In 2023 o.a. aandacht voor:</p>
               
-              <p><strong>Evaluatiepunten:</strong></p>
-              <ul className="info-list">
-                <li>Bezetting, materieel, communicatie, opleiding & veiligheid</li>
-                <li>Jaarlijkse audit door RN & KNRM bij KWC</li>
-              </ul>
-              
-              <p><strong>Inzetgegevens na incident door RB:</strong></p>
-              <ul className="info-list">
-                <li>In eigen registratiesysteem</li>
-                <li>Terugkoppeling aan KWC (Duty/Watch Officer)</li>
+              <ul className="info-list checkmark">
+                <li>In-/uitmelden</li>
+                <li>Correcte werkwijze alarmering (pagers, geen telefoon)</li>
+                <li>Betere registratie van incidenten en leermomenten</li>
               </ul>
             </>
           )
@@ -253,103 +61,220 @@ export const inzetprotocolRBKNRMDetail: InfoCardDetail = {
       ]
     },
     {
-      title: 'Quickguide - Praktisch Overzicht',
-      icon: 'fas fa-list-alt',
+      title: 'Inzet & Alarmering',
+      icon: 'fas fa-bell',
       cards: [
         {
-          title: 'Samenvatting inzetstappen',
-          icon: 'fas fa-check-square',
+          title: 'Wanneer wordt gealarmeerd?',
+          icon: 'fas fa-question-circle',
           content: (
             <>
-              <table className="custom-table">
-                <thead>
-                  <tr>
-                    <th>Stap</th>
-                    <th>Actie</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Inmelden</td>
-                    <td>www.strandveilig.nl of telefonisch</td>
-                  </tr>
-                  <tr>
-                    <td>Uitmelden</td>
-                    <td>Bij einde dienst of onvoldoende bezetting</td>
-                  </tr>
-                  <tr>
-                    <td>Voldoende bezetting</td>
-                    <td>Minimaal 1 natte inzetbare eenheid</td>
-                  </tr>
-                  <tr>
-                    <td>Alarmering</td>
-                    <td>Binnen 2 min inmelden via marifoon of telefoon</td>
-                  </tr>
-                  <tr>
-                    <td>Tijdens incident</td>
-                    <td>Regelmatig SitRap's via marifoon of telefoon</td>
-                  </tr>
-                  <tr>
-                    <td>Afloop incident</td>
-                    <td>Telefonisch melden aan KWC</td>
-                  </tr>
-                  <tr>
-                    <td>Persvoorlichting</td>
-                    <td>Alleen na overleg met KWC, RN en KNRM</td>
-                  </tr>
-                </tbody>
-              </table>
-            </>
-          )
-        }
-      ]
-    },
-    {
-      title: 'Bijlagen',
-      icon: 'fas fa-paperclip',
-      cards: [
-        {
-          title: 'Overzicht bijlagen',
-          icon: 'fas fa-list',
-          content: (
-            <>
-              <ul className="info-list">
-                <li>Bijlage 1: Deelnemende reddingsbrigades</li>
-                <li>Bijlage 2: Capcode-overzicht (separaat)</li>
-                <li>Bijlage 3: Aanwezigheidsafspraken</li>
-                <li>Bijlage 4: Alarmeringsteksten & afkortingen</li>
-                <li>Bijlage 5: Quickguide inzetprotocol</li>
-                <li>Bijlage 6: Aandachtspunten samenwerking 2021</li>
+              <ul className="info-list checkmark">
+                <li>Reddingsbrigade is ingemeld via <a href="https://www.strandveilig.nl" target="_blank" rel="noopener noreferrer">www.strandveilig.nl</a> of telefonisch/marifoon</li>
+                <li>Alarmploegen zijn 24/7 beschikbaar (mits ingericht)</li>
+                <li>Bloktijden: vaste periodes met gegarandeerde bezetting</li>
               </ul>
             </>
           )
         },
         {
-          title: 'Bron Document',
+          title: 'Waarvoor wordt gealarmeerd?',
+          icon: 'fas fa-exclamation-triangle',
+          content: (
+            <>
+              <ul className="info-list checkmark">
+                <li>Incidenten tot 1 km uit de kust: zwemmer in problemen, afgedreven voorwerpen, etc.</li>
+                <li>EHBO-gevallen op strand: via de regionale meldkamer</li>
+                <li>Burenhulp: brigades ondersteunen elkaar bij nood</li>
+              </ul>
+            </>
+          )
+        },
+        {
+          title: 'Hoe wordt gealarmeerd?',
+          icon: 'fas fa-broadcast-tower',
+          content: (
+            <>
+              <ul className="info-list checkmark">
+                <li>Via pagers (met capcodes van zowel meldkamer als KWC)</li>
+                <li>Gebruik van systeem Vision door KWC</li>
+                <li>Vaste alarmeringsteksten en afkortingen zoals:
+                  <ul>
+                    <li>ZVTrbs = Zandvoort, strandploeg</li>
+                    <li>NAZrba = Noordwijk, alarmploeg</li>
+                    <li>VLI = KNRM Vlieland</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Bij alarm:</strong> binnen 2 minuten contact opnemen met KWC via marifoonkanaal 16 of telefoon: <a href="tel:0223-542300">0223-542300</a> (bij geen gehoor: <a href="tel:0900-0111">0900-0111</a>)</p>
+            </>
+          )
+        },
+        {
+          title: 'Prioriteitcodes',
+          icon: 'fas fa-sort-numeric-down',
+          content: (
+            <>
+              <ul className="info-list">
+                <li><strong>PRIO 1:</strong> Levensbedreigend of gevaar voor schade – directe inzet KNRM + Reddingsbrigade</li>
+                <li><strong>PRIO 2:</strong> Niet direct levensbedreigend, wel snelle actie nodig</li>
+                <li><strong>PRIO 3:</strong> Oefening, afmelding, waarschuwen, etc.</li>
+              </ul>
+            </>
+          )
+        }
+      ]
+    },
+    {
+      title: 'Communicatie & Voorwaarden',
+      icon: 'fas fa-comments',
+      cards: [
+        {
+          title: 'Communicatie & Statussen',
+          icon: 'fas fa-exchange-alt',
+          content: (
+            <>
+              <p><strong>Statusupdates aan KWC:</strong></p>
+              <ul className="info-list">
+                <li><strong>Status 1:</strong> Onderweg</li>
+                <li><strong>Status 2:</strong> Ter plaatse</li>
+                <li><strong>Status 3:</strong> Afgehandeld</li>
+              </ul>
+              
+              <p>Tijdens inzet: SitRep (situatierapporten) om de 15 minuten</p>
+              <p>Afmelden na afloop via marifoon of telefoon</p>
+            </>
+          )
+        },
+        {
+          title: 'Voorwaarden voor deelname',
+          icon: 'fas fa-clipboard-list',
+          content: (
+            <>
+              <p>Reddingsbrigades moeten:</p>
+              <ul className="info-list checkmark">
+                <li>Structureel toezicht houden in kustgebied</li>
+                <li>Voldoen aan de eisen in dit protocol</li>
+              </ul>
+              
+              <p><strong>Wekelijks proefalarm (capcode 1735000):</strong> elke woensdag ±18:30</p>
+            </>
+          )
+        },
+        {
+          title: 'Kwaliteit & Audits',
+          icon: 'fas fa-certificate',
+          content: (
+            <>
+              <ul className="info-list checkmark">
+                <li>Zomerwerkbezoeken door Kustwacht: controle op bezetting, materieel, communicatie, veiligheid</li>
+                <li>RN en KNRM voeren audits uit op het systeem en evalueren samen met het KWC</li>
+              </ul>
+            </>
+          )
+        },
+        {
+          title: 'Quickguide',
           icon: 'fas fa-file-alt',
+          content: (
+            <>
+              <ul className="info-list">
+                <li><strong>Inmelden:</strong> via <a href="https://strandveilig.nl" target="_blank" rel="noopener noreferrer">strandveilig.nl</a> of telefoon/marifoon</li>
+                <li><strong>Uitmelden:</strong> idem bij dienstafsluiting</li>
+                <li><strong>Reactietijd:</strong>
+                  <ul>
+                    <li>Strandploeg: 2 minuten</li>
+                    <li>Alarmploeg: 10 minuten</li>
+                  </ul>
+                </li>
+              </ul>
+            </>
+          )
+        }
+      ]
+    },
+    {
+      title: 'Contactgegevens & Document',
+      icon: 'fas fa-phone-alt',
+      cards: [
+        {
+          title: 'Persvoorlichting',
+          icon: 'fas fa-newspaper',
+          content: (
+            <>
+              <p>Alleen in overleg tussen:</p>
+              <ul className="info-list checkmark">
+                <li>Betrokken reddingsbrigade</li>
+                <li>Reddingsbrigade Nederland</li>
+                <li>KNRM</li>
+                <li>Kustwachtcentrum</li>
+              </ul>
+            </>
+          )
+        },
+        {
+          title: 'Contactgegevens',
+          icon: 'fas fa-address-card',
+          content: (
+            <>
+              <div className="contact-table">
+                <table className="info-table">
+                  <thead>
+                    <tr>
+                      <th>Organisatie</th>
+                      <th>Contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Reddingsbrigade Nederland</td>
+                      <td>
+                        <p><i className="fas fa-envelope"></i> <a href="mailto:info@reddingsbrigade.nl">info@reddingsbrigade.nl</a></p>
+                        <p><i className="fas fa-phone"></i> <a href="tel:06-12392283">06-12392283</a> (Operationeel Coördinator)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Kustwachtcentrum</td>
+                      <td>
+                        <p><i className="fas fa-phone"></i> <a href="tel:0223-542300">0223-542300</a></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>KNRM Lifeguards</td>
+                      <td>
+                        <p><i className="fas fa-mobile-alt"></i> <a href="tel:06-10703411">06-10703411</a> (Coördinator)</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )
+        },
+        {
+          title: 'Brondocument',
+          icon: 'fas fa-file-pdf',
           content: (
             <>
               <div className="document-container pdf-document">
                 <i className="fas fa-file-pdf pdf-icon"></i>
-                <h4>Inzetprotocol Reddingsbrigades & KNRM Lifeguards (Kustwachtcentrum)</h4>
+                <h4>Inzetprotocol Reddingsbrigades en KNRM Lifeguards</h4>
                 
                 <div className="pdf-info">
-                  <p><strong>Type document:</strong> Extern Google Document</p>
-                  <p><strong>Gebruik:</strong> Protocollair document voor kustwachtgerelateerde inzetten</p>
+                  <p><strong>Type document:</strong> Extern PDF Document</p>
+                  <p><strong>Versie:</strong> 1.1 – 2023</p>
+                  <p><strong>Opgesteld door:</strong> Kustwachtcentrum, Reddingsbrigade Nederland, KNRM</p>
                 </div>
                 
                 <div className="button-container">
-                  <a href="https://docs.google.com/document/d/1K67tPh62Rrqaid3sCDind1ECzymsr0pf/edit?tab=t.0" 
+                  <a href="https://drive.google.com/open?id=1a0Gf_mcOS4Ll6h7UWyedAx9T0aKdwO3-&usp=drive_copy" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="button primary pdf-button">
                     <i className="fas fa-external-link-alt"></i> Open Origineel Document
                   </a>
                 </div>
-              </div>
-              
-              <div className="important-note">
-                <p><strong>Let op:</strong> Deze pagina bevat een samenvatting van het inzetprotocol. Voor de meest actuele informatie raadpleeg altijd het originele document via bovenstaande link.</p>
               </div>
             </>
           )

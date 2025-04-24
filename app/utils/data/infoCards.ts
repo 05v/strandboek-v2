@@ -160,12 +160,11 @@ export const infoCards: InfoCard[] = [
   },
   {
     id: 'werkwijze-alarmploeg',
-    title: 'Werkwijze alarmploeg',
-    description: 'Protocol en richtlijnen voor de werkwijze van de alarmploeg bij incidenten.',
+    title: 'Alarmploeg & Opgeschaalde Hulpverlening',
+    description: 'Beleid, procedures en werkinstructies voor de inzet van de alarmploeg bij acute en opgeschaalde noodsituaties.',
     icon: 'fas fa-bell',
     category: 'operationeel',
-    url: 'https://drive.google.com/file/d/1ImOuJKqOhQlViEfEkqDa8m0LX1et1M11/view',
-    isExternal: true
+    url: '/informatie/werkwijze-alarmploeg'
   },
   {
     id: 'strandrolstoel-info',
@@ -187,8 +186,8 @@ export const infoCards: InfoCard[] = [
   },
   {
     id: 'inzetprotocol-rb-knrm',
-    title: 'Inzetprotocol Reddingsbrigades & KNRM Lifeguards',
-    description: 'Samenwerkingsprotocol tussen Reddingsbrigades, KNRM Lifeguards en het Kustwachtcentrum voor alarmeringen en inzetten.',
+    title: 'Inzetprotocol Reddingsbrigades en KNRM Lifeguards',
+    description: 'Protocol voor alarmering en samenwerking tussen Kustwachtcentrum, Reddingsbrigades en KNRM Lifeguards bij incidenten aan de Nederlandse kust.',
     icon: 'fas fa-life-ring',
     category: 'operationeel',
     url: '/informatie/inzetprotocol-rb-knrm'
@@ -269,38 +268,106 @@ export const infoCards: InfoCard[] = [
   
   // Richtlijnen en protocollen
   {
-    id: 'richtlijnen-placeholder-1',
-    title: 'Richtlijn 1',
-    description: 'Placeholder voor richtlijn/protocol kaart 1.',
-    icon: 'fas fa-file-alt',
+    id: 'vog-beleid',
+    title: 'VOG-beleid bij de ZRB',
+    description: 'Informatie over de Verklaring Omtrent het Gedrag (VOG) voor leden van de Reddingsbrigade Zandvoort.',
+    icon: 'fas fa-shield-alt',
     category: 'richtlijnen',
-    url: '/informatie/richtlijnen-placeholder-1'
+    url: '/informatie/vog-beleid'
   },
   {
-    id: 'richtlijnen-placeholder-2',
-    title: 'Richtlijn 2',
-    description: 'Placeholder voor richtlijn/protocol kaart 2.',
-    icon: 'fas fa-file-alt',
+    id: 'protocol-psychosociale-ondersteuning',
+    title: 'Protocol Psychosociale Ondersteuning',
+    description: 'Protocol voor psychosociale ondersteuning na schokkende gebeurtenissen bij de Zandvoortse Reddingsbrigade.',
+    icon: 'fas fa-heart',
     category: 'richtlijnen',
-    url: '/informatie/richtlijnen-placeholder-2'
+    url: '/informatie/protocol-psychosociale-ondersteuning'
+  },
+  {
+    id: 'protocol-evaluatiemethode-inzet',
+    title: 'Protocol Evaluatiemethode Inzet',
+    description: 'Gestructureerde methode voor het evalueren van inzetten en hulpverleningen van de Zandvoortse Reddingsbrigade.',
+    icon: 'fas fa-clipboard-check',
+    category: 'richtlijnen',
+    url: '/informatie/protocol-evaluatiemethode-inzet'
+  },
+  {
+    id: 'protocol-besmettingsaccident',
+    title: 'Protocol Besmettingsaccident',
+    description: 'Protocol voor prik-, bijt-, snij-, krab- en spataccidenten met mogelijk besmet bloed of lichaamsvloeistoffen bij de ZRB.',
+    icon: 'fas fa-syringe',
+    category: 'richtlijnen',
+    url: '/informatie/protocol-besmettingsaccident'
+  },
+  {
+    id: 'sociale-media-richtlijnen',
+    title: 'Richtlijnen Gebruik Sociale Media',
+    description: 'Richtlijnen voor het gebruik van sociale media door leden van de Reddingsbrigade Zandvoort.',
+    icon: 'fas fa-hashtag',
+    category: 'richtlijnen',
+    url: '/informatie/sociale-media-richtlijnen'
+  },
+  {
+    id: 'brancherichtlijn-og',
+    title: 'Brancherichtlijn Optische- en Geluidssignalen 2024',
+    description: 'Richtlijnen voor het gebruik van optische- en geluidssignalen door reddingsbrigade voertuigen bij dringende taken.',
+    icon: 'fas fa-ambulance',
+    category: 'richtlijnen',
+    url: '/informatie/brancherichtlijn-og'
+  },
+  {
+    id: 'actief-lid',
+    title: 'Werkafspraak – Actief Lid bij de ZRB',
+    description: 'Criteria en richtlijnen voor het actief lidmaatschap bij de Zandvoortse Reddingsbrigade.',
+    icon: 'fas fa-user-check',
+    category: 'richtlijnen',
+    url: '/informatie/actief-lid'
+  },
+  {
+    id: 'stroomdiagram-reanimatie',
+    title: 'Stroomdiagram reanimatie drenkeling',
+    description: 'Stapsgewijs overzicht van reanimatieprotocol specifiek voor drenkelingen.',
+    icon: 'fas fa-heartbeat',
+    category: 'richtlijnen',
+    url: 'https://drive.google.com/open?id=1YDH7hvLT0MIvt11udwR8yw5Wvtw7zVvc&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'stroomdiagram-hulpverlening',
+    title: 'Stroomdiagram algemene hulpverlening drenkeling',
+    description: 'Protocol voor algemene hulpverlening aan drenkelingen in verschillende situaties.',
+    icon: 'fas fa-life-ring',
+    category: 'richtlijnen',
+    url: 'https://drive.google.com/open?id=1VISwOuSVyXsrSr86eOc6aruvTAQMqgSU&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'richtlijn-voorwaarden-matrix',
+    title: 'Richtlijn en voorwaarden voor leden ZRB - matrix',
+    description: 'Overzicht van benodigde diploma\'s en uitrusting voor gebruik van voertuigen, boten en materieel.',
+    icon: 'fas fa-table',
+    category: 'richtlijnen',
+    url: 'https://drive.google.com/open?id=1qMMHw-ftMlFoFc7iFOjymQVMmQ-MCW3h&usp=drive_copy',
+    isExternal: true
+  },
+  {
+    id: 'richtlijn-bewaking',
+    title: 'Richtlijn Leidraad Incidentele bewaking en ondersteuning',
+    description: 'Handleiding voor verzoeken voor bewaking en ondersteuning: procedure, voorwaarden en besluitvorming.',
+    icon: 'fas fa-clipboard-check',
+    category: 'richtlijnen',
+    url: 'https://drive.google.com/open?id=1JRbgc1lo3boDw6INqkbDZj8oKUdo44w_&usp=drive_copy',
+    isExternal: true
   },
   
   // Inzet duingebied
   {
-    id: 'duingebied-placeholder-1',
-    title: 'Inzet Duingebied 1',
-    description: 'Placeholder voor inzet duingebied kaart 1.',
+    id: 'inzet-duingebied',
+    title: 'Inzet Duingebied – Werkinstructie',
+    description: 'Werkinstructie voor inzet in duingebieden: Amsterdamse Waterleidingsduinen (AWD) en Nationaal Park Zuid-Kennemerland (NPZK).',
     icon: 'fas fa-mountain',
     category: 'duingebied',
-    url: '/informatie/duingebied-placeholder-1'
-  },
-  {
-    id: 'duingebied-placeholder-2',
-    title: 'Inzet Duingebied 2',
-    description: 'Placeholder voor inzet duingebied kaart 2.',
-    icon: 'fas fa-mountain',
-    category: 'duingebied',
-    url: '/informatie/duingebied-placeholder-2'
+    url: '/informatie/inzet-duingebied'
   },
   
   // Handleiding/naslag
